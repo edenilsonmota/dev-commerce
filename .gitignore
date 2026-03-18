@@ -14,6 +14,7 @@
 .env
 .env.backup
 .env.production
+.env.staging
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
@@ -26,3 +27,34 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+# Storage (uploaded files, compiled views, sessions, cache)
+/storage/app/public/*
+!/storage/app/public/.gitignore
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Laravel Octane
+/.rr.yaml
+
+# Compiled assets
+/public/css
+/public/js
+/public/mix-manifest.json
+
+# Composer
+composer.phar
+
+# NPM / Yarn
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# OS
+Thumbs.db
